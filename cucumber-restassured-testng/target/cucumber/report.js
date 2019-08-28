@@ -112,28 +112,28 @@ formatter.match({
   "location": "Getuserlist_steps.i_want_to_write_a_step_with_precondition()"
 });
 formatter.result({
-  "duration": 119918190,
+  "duration": 136716294,
   "status": "passed"
 });
 formatter.match({
   "location": "Getuserlist_steps.invoke_get_service()"
 });
 formatter.result({
-  "duration": 2316075855,
+  "duration": 2585145417,
   "status": "passed"
 });
 formatter.match({
   "location": "Getuserlist_steps.i_validate_the_status_code()"
 });
 formatter.result({
-  "duration": 3724992,
+  "duration": 4283199,
   "status": "passed"
 });
 formatter.match({
   "location": "Getuserlist_steps.i_validate_the_content_type()"
 });
 formatter.result({
-  "duration": 124299,
+  "duration": 143115,
   "status": "passed"
 });
 });
