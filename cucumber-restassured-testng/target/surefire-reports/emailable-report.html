@@ -9,10 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">3,641</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,859</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runners.Getuserlistrunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1566970463587</td><td rowspan="1">2833</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runners.Getuserlistrunner</td><td><a href="#m0">feature</a></td><td rowspan="1">1569218675720</td><td rowspan="1">2852</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runners.Getuserlistrunner</td><td><a href="#m1">feature</a></td><td rowspan="1">1569218678591</td><td rowspan="1">235</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">runners.Getuserlistrunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>getUser</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">runners.Getuserlistrunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>getUserAllUsers</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.AssertionError: The following asserts failed:
+	expected [application/json1; charset=utf-8] but found [application/json; charset=utf-8]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at runners.Getuserlistrunner.feature(Getuserlistrunner.java:34)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+Caused by: java.lang.AssertionError: The following asserts failed:
+	expected [application/json1; charset=utf-8] but found [application/json; charset=utf-8]
+	at stepDefinations.GetAllUsers.i_validate_the_contenttype(GetAllUsers.java:42)
+	at ✽.And I validate the contenttype(getAllUsers.feature:8)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runners.Getuserlistrunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>getUser</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

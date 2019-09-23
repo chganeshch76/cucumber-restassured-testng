@@ -1,5 +1,74 @@
 [
   {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "getUserslist",
+        "description": "",
+        "id": "getuserallusers;getuserslist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 163318659,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "precondition",
+            "match": {
+              "location": "GetAllUsers.precondition()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2589542652,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Invoke get all users service",
+            "match": {
+              "location": "GetAllUsers.invoke_get_all_users_service()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5057505,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate the statuscode",
+            "match": {
+              "location": "GetAllUsers.i_validate_the_statuscode()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2895949,
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [application/json1; charset\u003dutf-8] but found [application/json; charset\u003dutf-8]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat stepDefinations.GetAllUsers.i_validate_the_contenttype(GetAllUsers.java:42)\r\n\tat ✽.And I validate the contenttype(getAllUsers.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I validate the contenttype",
+            "match": {
+              "location": "GetAllUsers.i_validate_the_contenttype()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "getUserAllUsers",
+    "description": "get users",
+    "id": "getuserallusers",
+    "keyword": "Feature",
+    "uri": "getAllUsers.feature"
+  },
+  {
     "comments": [
       {
         "line": 1,
@@ -86,7 +155,7 @@
         "steps": [
           {
             "result": {
-              "duration": 136716294,
+              "duration": 102633,
               "status": "passed"
             },
             "line": 24,
@@ -98,7 +167,7 @@
           },
           {
             "result": {
-              "duration": 2585145417,
+              "duration": 208814542,
               "status": "passed"
             },
             "line": 25,
@@ -110,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 4283199,
+              "duration": 341538,
               "status": "passed"
             },
             "line": 26,
@@ -122,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 143115,
+              "duration": 100922,
               "status": "passed"
             },
             "line": 27,
@@ -139,6 +208,6 @@
     "description": "get user list based on id",
     "id": "getuser",
     "keyword": "Feature",
-    "uri": "sample.feature"
+    "uri": "getUserperPage.feature"
   }
 ]

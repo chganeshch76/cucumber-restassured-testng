@@ -1,2 +1,3 @@
 stepDefinations\Getuserlist_steps.class
 runners\Getuserlistrunner.class
+stepDefinations\GetAllUsers.class

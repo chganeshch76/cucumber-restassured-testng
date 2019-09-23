@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3859" started-at="2019-09-23T11:34:35 IST" finished-at="2019-09-23T11:34:39 IST">
+  <suite name="Default suite" duration-ms="3463" started-at="2019-09-23T10:51:36 IST" finished-at="2019-09-23T10:51:39 IST">
     <groups>
       <group name="cucumber">
-        <method signature="Getuserlistrunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@3fee9989]" name="feature" class="runners.Getuserlistrunner"/>
+        <method signature="Getuserlistrunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@64729b1e]" name="feature" class="runners.Getuserlistrunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="3859" started-at="2019-09-23T11:34:35 IST" finished-at="2019-09-23T11:34:39 IST">
+    <test name="Default test" duration-ms="3463" started-at="2019-09-23T10:51:36 IST" finished-at="2019-09-23T10:51:39 IST">
       <class name="runners.Getuserlistrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.Getuserlistrunner@3fee9989]" name="setUpClass" is-config="true" duration-ms="311" started-at="2019-09-23T11:34:35 IST" finished-at="2019-09-23T11:34:35 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.Getuserlistrunner@64729b1e]" name="setUpClass" is-config="true" duration-ms="315" started-at="2019-09-23T10:51:36 IST" finished-at="2019-09-23T10:51:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@3fee9989]" name="feature" duration-ms="2852" started-at="2019-09-23T11:34:35 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-23T11:34:38 IST">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@64729b1e]" name="feature" duration-ms="2560" started-at="2019-09-23T10:51:36 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-23T10:51:39 IST">
           <params>
             <param index="0">
               <value>
@@ -57,13 +57,9 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 at org.testng.TestNG.runSuites(TestNG.java:1032)
 at org.testng.TestNG.run(TestNG.java:1000)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.AssertionError: The following asserts failed:
 expected [application/json1; charset=utf-8] but found [application/json; charset=utf-8]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
@@ -76,7 +72,7 @@ at ✽.And I validate the contenttype(getAllUsers.feature:8)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@3fee9989]" name="feature" duration-ms="235" started-at="2019-09-23T11:34:38 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-23T11:34:38 IST">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.Getuserlistrunner@64729b1e]" name="feature" duration-ms="218" started-at="2019-09-23T10:51:39 IST" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-23T10:51:39 IST">
           <params>
             <param index="0">
               <value>
@@ -87,11 +83,11 @@ at ✽.And I validate the contenttype(getAllUsers.feature:8)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.Getuserlistrunner@3fee9989]" name="tearDownClass" is-config="true" duration-ms="288" started-at="2019-09-23T11:34:38 IST" finished-at="2019-09-23T11:34:39 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.Getuserlistrunner@64729b1e]" name="tearDownClass" is-config="true" duration-ms="210" started-at="2019-09-23T10:51:39 IST" finished-at="2019-09-23T10:51:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.Getuserlistrunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
